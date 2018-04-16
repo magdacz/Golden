@@ -1,14 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300i|Montserrat:400,600,700|Roboto+Slab');
-
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i|Montserrat:400,600,700,800|Roboto+Slab');
 //ZMIENNE
-//MIXINY
+// fonty 
+$font-primary: 'Montserrat', sans-serif;
+$font-second: 'Merriweather', serif;
+$font-p: 'Roboto Slab', serif;
 
-
-
-
-body{
+body {
     padding: 0;
     margin: 0;
 }
@@ -52,7 +50,7 @@ header {
         font-size: 14px;
         margin-right: 40px;
         pointer: cursor;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-primary;
         font-weight: 600;
     }
 
@@ -63,7 +61,7 @@ header {
         margin-top: 245px;
         font-size: 40px;
         color: white;
-        font-family: 'Merriweather', serif;
+        font-family:$font-second;
         text-shadow: black 0.1em 0.1em 0.2em;
     }
 
@@ -73,7 +71,7 @@ header {
         text-align: center;
         margin: 20px auto 59px auto;
         color: white;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-primary;
         font-weight: 700;
         text-shadow: black 0.1em 0.1em 0.2em;
     }
@@ -90,7 +88,64 @@ header {
         color: white;
         background-color: #fed136;
         cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-primary;
         font-weight: 700;
     }
+}
+
+/*SERVICES*/
+ .services {
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+     h1 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 0;
+        font-size: 40px;
+        font-family: $font-primary;
+        font-weight: 800;
+        font-style: bold;
+        color: #222222;
+     }
+
+     p {
+        margin-top: 30px;
+        margin-bottom: 70px;
+        text-align: center;
+        font-size: 16px;
+        font-family: $font-second;
+        color: #777777;
+     }
+
+     .icons { 
+        display: flex;
+
+        div {
+            text-align:center;
+           
+            h2 {
+                text-transform: capitalize;
+                font-size: 18px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-family: $font-primary;
+                font-weight: 700;
+                color: #222222;
+
+
+            }
+
+            p {
+                font-size: 14px;
+                font-family: $font-p;
+                color: #777777;
+                line-height: 1.5;
+                 padding: 0 30px;
+                 margin-top: 0;
+                 margin-bottom: 0;
+            }
+        }
+     }
+
 }
