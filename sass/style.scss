@@ -19,7 +19,7 @@ body {
 /*HEADER*/
 
 header {
-    height: 100vh;;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,4 +148,72 @@ header {
         }
      }
 
+}
+
+/*PORTFOLIO*/
+.our-portfolio {
+     background: #f7f7f7;
+     padding-top: 100px;
+
+     h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-primary;
+        font-size: 40px;
+        font-weight: 800;
+        color: #222222;
+        margin-bottom: 0;
+        line-height: 0;
+     }
+
+     p {
+        margin-top: 30px;
+        text-align: center;
+        font-family:$font-second;
+        font-size: 16px;
+        color: #777777;
+
+     }
+
+     .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 75px;
+        padding-bottom: 110px;
+
+        div {
+            background: white;
+            width: 290px;
+            height: 390px;
+            margin: 25px 0;
+            text-align: center;
+
+            img {
+                width: 290px;
+                height: 300px;
+            }
+
+            h2 { 
+                text-transform: capitalize;
+                margin-bottom: 0;
+                font-family: $font-primary;
+                font-size: 18px;
+                font-weight: 800;
+                color: #222222;
+            }
+
+            p {
+                margin-top: 2px;
+                font-family: $font-second;
+                font-size: 14px;
+                color: #737373;
+            }
+
+        }
+     }
+
+     
+
+    
 }
