@@ -211,4 +211,110 @@ header button {
   font-size: 14px;
   color: #737373;
 }
+
+/*TEAM*/
+.section-team {
+  background: #f9f9f9;
+  margin-top: 0;
+}
+
+.section-team h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #222222;
+  padding-top: 120px;
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.section-team p {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  color: #777777;
+}
+
+.section-team .team {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-team .photo-team .photo {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+}
+
+.section-team .photo-team .kimberly {
+  background: url("https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-team .photo-team .rico {
+  background: url("https://images.pexels.com/photos/542282/pexels-photo-542282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-team .photo-team .uku {
+  background: url("https://images.pexels.com/photos/428341/pexels-photo-428341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-team .photo-team h2 {
+  text-align: center;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #222222;
+}
+
+.section-team .photo-team p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: #777777;
+}
+
+.section-team .photo-team .social-media {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.section-team .photo-team .social-media .fab {
+  text-align: center;
+  border: 3px solid #222222;
+  color: #222222;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.section-team .text-end {
+  color: green;
+  margin-top: 50px;
+  padding-bottom: 117px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  color: #777777;
+}
 /*# sourceMappingURL=style.css.map */
