@@ -1,4 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300i|Montserrat:400,600,700,800|Roboto+Slab");
+/*ciemne nagłówki*/
+/*p w services*/
+/*golden*/
 body {
   padding: 0;
   margin: 0;
@@ -42,7 +46,7 @@ header a {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   margin-right: 40px;
   pointer: cursor;
@@ -56,7 +60,7 @@ header h1 {
   margin-bottom: 0;
   margin-top: 245px;
   font-size: 40px;
-  color: white;
+  color: #ffffff;
   font-family: "Merriweather", serif;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -66,7 +70,7 @@ header p {
   font-size: 75px;
   text-align: center;
   margin: 20px auto 59px auto;
-  color: white;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -81,7 +85,7 @@ header button {
   border: none;
   display: block;
   margin: 0 auto;
-  color: white;
+  color: #ffffff;
   background-color: #fed136;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -180,7 +184,7 @@ header button {
 }
 
 .our-portfolio .portfolio div {
-  background: white;
+  background: #ffffff;
   width: 290px;
   height: 390px;
   margin: 25px 0;
