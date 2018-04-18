@@ -6,6 +6,7 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -234,6 +235,7 @@ header button {
 .section-team p {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 83px;
   font-family: "Merriweather", serif;
   font-size: 16px;
   color: #777777;
@@ -302,11 +304,11 @@ header button {
   text-align: center;
   border: 3px solid #222222;
   color: #222222;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   font-size: 20px;
   border-radius: 50%;
-  line-height: 40px;
+  line-height: 34px;
   margin-right: 10px;
 }
 
@@ -340,5 +342,50 @@ header button {
 
 .section-logos .logos img {
   margin-right: 39px;
+}
+
+/*FOOTER*/
+footer {
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .copyright {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+footer .copyright h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #555555;
+  font-size: 14px;
+}
+
+footer .social-media-icons {
+  -ms-flex: 2;
+      flex: 2;
+  padding-left: 130px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+footer .social-media-icons .fab {
+  text-align: center;
+  background: #222222;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,6 +25,7 @@ $color-background: #f7f7f7;
 body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -251,6 +252,7 @@ header {
     p {
         text-align: center;
         margin-top: 30px;
+        margin-bottom: 83px;
         font-family:$font-second;
         font-size: $fontSize-fourth;
         color: $color-third;
@@ -316,11 +318,11 @@ header {
                 text-align: center;
                 border: 3px solid $color-primary;
                 color: $color-primary;
-                width: 40px;
-                height: 40px;
+                width: 34px;
+                height: 34px;
                 font-size: 20px;
                 border-radius: 50%;
-                line-height: 40px;
+                line-height: 34px;
                 margin-right: 10px;
             }
         }
@@ -353,3 +355,44 @@ header {
     }
     }
 }
+
+/*FOOTER*/
+footer {
+    height: 90px;
+    display: flex;
+
+
+    .footer {
+        display: flex;
+    }
+
+    .copyright {
+        flex: 1;
+
+        h3 {
+        font-family: $font-primary;
+        color: #555555;
+        font-size: $fontSize-fifth;
+        }
+    }
+
+    .social-media-icons {
+        flex: 2;
+        padding-left: 130px; 
+        display: flex;
+        align-items: center;
+
+        .fab {
+                text-align: center;
+                background: $color-primary;
+                color: $color-second;
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                border-radius: 50%;
+                line-height: 40px;
+                margin-right: 10px;
+            }
+    }
+}
+
