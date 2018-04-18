@@ -244,6 +244,7 @@ header {
         color: $color-primary;
         padding-top: 120px;
         margin-bottom: 0;
+        margin-top: 0;
         line-height: 0;
     }
 
@@ -329,6 +330,7 @@ header {
         color: green;
         margin-top: 50px;
         padding-bottom: 117px;
+        margin-bottom: 0;
         font-family: $font-p;
         font-size: $fontSize-fourth;
         color: $color-third;
@@ -336,15 +338,18 @@ header {
 }
 
 /*LOGOS*/
-section-logos {
+.section-logos {
+    height: 165px;
+    display: flex;
+    align-items: center;
+
     .logos {
         display: flex;
-        justify-content: space-around;
-        border: 1px solid green;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        img {
-        width: 180px;
-        border: 1px solid red;
-        }
+    img {
+        margin-right: 39px;
+    }
     }
 }

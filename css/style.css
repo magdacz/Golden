@@ -227,6 +227,7 @@ header button {
   color: #222222;
   padding-top: 120px;
   margin-bottom: 0;
+  margin-top: 0;
   line-height: 0;
 }
 
@@ -313,22 +314,31 @@ header button {
   color: green;
   margin-top: 50px;
   padding-bottom: 117px;
+  margin-bottom: 0;
   font-family: "Roboto Slab", serif;
   font-size: 16px;
   color: #777777;
 }
 
 /*LOGOS*/
-section-logos .logos {
+.section-logos {
+  height: 165px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border: 1px solid green;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
-section-logos .logos img {
-  width: 180px;
-  border: 1px solid red;
+.section-logos .logos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-logos .logos img {
+  margin-right: 39px;
 }
 /*# sourceMappingURL=style.css.map */
