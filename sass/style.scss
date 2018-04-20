@@ -232,6 +232,136 @@ header {
      }  
 }
 
+/*ABOUT US*/
+.about-us {
+    padding-bottom: 125px;
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font-primary;
+        font-size: $fontSize-primary;
+        font-weight: 800;
+        color: $color-primary;
+        padding-top: 120px;
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 0;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 84px;
+        font-family:$font-second;
+        font-size: $fontSize-fourth;
+        color: $color-third;
+    }
+
+
+    .about {
+
+        .timeline {
+            display: flex;
+            justify-content: center;
+        
+            .content {
+                height: 170px;
+                width: 320px;
+
+                h2 {
+                    font-family: $font-primary;
+                    font-size: $fontSize-second;
+                    color: $color-primary;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+
+                    span {
+                        text-transform: capitalize;
+                    }
+                } 
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: $font-p;
+                    font-size: $fontSize-fifth;
+                    line-height: 1.5;
+                    color: $color-third;
+                }
+
+                .text-right {
+                    text-align: right;
+                }
+
+                .text-left {
+                    text-align: left;
+                }
+                
+            }
+
+            .circle {
+                width: 169px;
+                height: 170px; 
+                border: 5px solid #f1f1f1;;
+                border-radius: 50%;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            .photo-july {
+                background-image: url(../images/july.png);
+                background-size: cover;
+            }
+
+            .photo-january {
+                background-image: url(../images/january.png);
+                background-size: cover;
+            }
+
+            .photo-december {
+                background-image: url(../images/december.png);
+                background-size: cover;
+            }
+
+            .photo-february {
+                background-image: url(../images/february.png);
+                background-size: cover;
+            }
+
+            .empty {
+            height: 170px;
+            width: 320px;
+            }
+        }
+
+        .our-story {
+            .circle-story {
+                background: $color-fourth;
+            }
+
+            .story {
+                color: $color-second;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: $font-primary;
+                font-size: $fontSize-second;
+                line-height: 1.7;
+                margin-top: 25px;
+            }
+        } 
+    .line {
+        width: 3px;
+        height: 95px;
+        background: #f1f1f1;;
+        border: none;
+        margin: 0 auto;
+    }   
+    }
+}
+    
+
 /*TEAM*/
 .section-team {
     background: #f9f9f9;

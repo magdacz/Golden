@@ -215,6 +215,131 @@ header button {
   color: #737373;
 }
 
+/*ABOUT US*/
+.about-us {
+  padding-bottom: 125px;
+}
+
+.about-us h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #222222;
+  padding-top: 120px;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 0;
+}
+
+.about-us p {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 84px;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  color: #777777;
+}
+
+.about-us .about .timeline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.about-us .about .timeline .content {
+  height: 170px;
+  width: 320px;
+}
+
+.about-us .about .timeline .content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-us .about .timeline .content h2 span {
+  text-transform: capitalize;
+}
+
+.about-us .about .timeline .content p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #777777;
+}
+
+.about-us .about .timeline .content .text-right {
+  text-align: right;
+}
+
+.about-us .about .timeline .content .text-left {
+  text-align: left;
+}
+
+.about-us .about .timeline .circle {
+  width: 169px;
+  height: 170px;
+  border: 5px solid #f1f1f1;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.about-us .about .timeline .photo-july {
+  background-image: url(../images/july.png);
+  background-size: cover;
+}
+
+.about-us .about .timeline .photo-january {
+  background-image: url(../images/january.png);
+  background-size: cover;
+}
+
+.about-us .about .timeline .photo-december {
+  background-image: url(../images/december.png);
+  background-size: cover;
+}
+
+.about-us .about .timeline .photo-february {
+  background-image: url(../images/february.png);
+  background-size: cover;
+}
+
+.about-us .about .timeline .empty {
+  height: 170px;
+  width: 320px;
+}
+
+.about-us .about .our-story .circle-story {
+  background: #fed136;
+}
+
+.about-us .about .our-story .story {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 25px;
+}
+
+.about-us .about .line {
+  width: 3px;
+  height: 95px;
+  background: #f1f1f1;
+  border: none;
+  margin: 0 auto;
+}
+
 /*TEAM*/
 .section-team {
   background: #f9f9f9;
