@@ -38,6 +38,10 @@ header .top-nav {
   margin-top: 40px;
 }
 
+header .logo {
+  cursor: pointer;
+}
+
 header ul {
   list-style: none;
 }
@@ -56,6 +60,22 @@ header a {
   pointer: cursor;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  transition: 0.6s;
+}
+
+header a:after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: #fed136;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+header a:hover:after {
+  opacity: 1;
 }
 
 header h1 {
@@ -94,6 +114,11 @@ header button {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+header button:hover {
+  transform: scale(1.1);
 }
 
 /*SERVICES*/
@@ -129,6 +154,8 @@ header button {
 
 .services .icons div {
   text-align: center;
+  padding: 20px 30px;
+  transition: 0.6s;
 }
 
 .services .icons div h2 {
@@ -146,9 +173,17 @@ header button {
   font-family: "Roboto Slab", serif;
   color: #777777;
   line-height: 1.5;
-  padding: 0 30px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.services .icons div:hover {
+  background: #fed136;
+}
+
+.services .icons div:hover:hover p,
+.services .icons div:hover:hover h2 {
+  color: white;
 }
 
 /*PORTFOLIO*/
@@ -197,6 +232,14 @@ header button {
 .our-portfolio .portfolio div img {
   width: 290px;
   height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.our-portfolio .portfolio div img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 .our-portfolio .portfolio div h2 {
@@ -291,6 +334,13 @@ header button {
   border-radius: 50%;
   margin-left: 40px;
   margin-right: 40px;
+  transition: 0.7s;
+}
+
+.about-us .about .timeline .circle:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .about-us .about .timeline .photo-july {
@@ -381,6 +431,12 @@ header button {
   width: 235px;
   height: 235px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.section-team .photo-team .photo:hover {
+  opacity: 0.8;
 }
 
 .section-team .photo-team .kimberly {
@@ -437,6 +493,15 @@ header button {
   border-radius: 50%;
   line-height: 34px;
   margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.section-team .photo-team .social-media .fab:hover {
+  background: #222222;
+  color: #ffffff;
+  border: none;
+  line-height: 40px;
 }
 
 .section-team .text-end {
@@ -469,6 +534,7 @@ header button {
 
 .section-logos .logos img {
   margin-right: 39px;
+  cursor: pointer;
 }
 
 /*CONTACT*/
@@ -564,6 +630,11 @@ header button {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+
+.section-contact .contact button:hover {
+  transform: scale(1.1);
 }
 
 /*FOOTER*/
@@ -609,5 +680,14 @@ footer .footer .social-media-icons .fab {
   border-radius: 50%;
   line-height: 40px;
   margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer .footer .social-media-icons .fab:hover {
+  color: #222222;
+  background: #ffffff;
+  line-height: 34px;
+  border: 3px solid #222222;
 }
 /*# sourceMappingURL=style.css.map */
