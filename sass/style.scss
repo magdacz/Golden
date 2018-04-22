@@ -20,6 +20,7 @@ $color-fourth: #fed136; /*golden*/
 $color-fifth: #737373; 
 $color-background: #f7f7f7;
 
+//PAGE
 
 * {
     box-sizing: border-box;
@@ -51,18 +52,39 @@ header {
         align-items: center;
         justify-content: space-between;
         margin-top: 40px;
+
+        @media(max-width: 768px) {
+            flex-direction: column;
+    
+        }
     }
 
     .logo {
         cursor: pointer;
+        
+        @media(max-width: 768px) {
+            display: inline-block;
+        }
     }
 
     ul {
         list-style: none;
+
+        @media(max-width: 768px) {
+            padding: 0;
+            margin: 0;
+        }
     }
 
     li {
         display: inline-block;
+
+        @media(max-width: 768px) {
+            padding: 3px;
+            display: block;
+            text-align: center;
+            font-size: 20px;
+        }
     }
 
     a {
@@ -94,6 +116,10 @@ header {
                 width: 100%;
             }
         }
+
+        @media(max-width: 768px) {
+            margin: 0;
+        }
     }
 
     h1 {
@@ -105,6 +131,10 @@ header {
         color:$color-second;
         font-family:$font-second;
         text-shadow: black 0.1em 0.1em 0.2em;
+
+        @media(max-width: 768px) {
+            margin-top: 180px;
+        }
     }
 
     p {
@@ -116,6 +146,11 @@ header {
         font-family: $font-primary;
         font-weight: 700;
         text-shadow: black 0.1em 0.1em 0.2em;
+
+        @media(max-width: 768px) {
+            font-size: 65px;
+            margin-bottom: 30px;;
+        }
     }
 
     button {
@@ -168,10 +203,14 @@ header {
      .icons { 
         display: flex;
 
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+
         div {
             text-align:center;
             padding: 20px 30px;
-            transition: 0.6s;
+            transition: 0.8s;
 
             h2 {
                 text-transform: capitalize;
@@ -386,6 +425,10 @@ header {
             .empty {
             height: 170px;
             width: 320px;
+
+            @media(max-width: 768px) {
+                display: none;
+            }
             }
         }
 
@@ -409,13 +452,21 @@ header {
         content: "";
         width: 3px;
         height: 1100px;
-        background: #f1f1f1;;
+        background: #f1f1f1;
         position: absolute;
         z-index: -1;
-        left: 50%;  
+        left: 50%;
+
+        @media(max-width: 768px) {
+            display: none;
+        }
     }
 
     }
+
+    @media(max-width: 768px) {
+          padding-bottom: 0;  
+        }
 }
     
 
@@ -464,6 +515,7 @@ header {
             &:hover {
             opacity: 0.8;
             }
+
         }
 
         .kimberly {
@@ -529,6 +581,10 @@ header {
                 }
             }
         }
+
+        @media(max-width: 768px) {
+          margin-bottom: 30px;  
+        }
     }
 
     .text-end {
@@ -539,6 +595,10 @@ header {
         font-family: $font-p;
         font-size: $fontSize-fourth;
         color: $color-third;
+
+        @media(max-width: 768px) {
+          margin-top: 25px;  
+        }
     }
 }
 
@@ -557,8 +617,26 @@ header {
             margin-right: 39px;
             cursor: pointer;
 
+            @media(max-width: 1200px) {
+                margin-right: 0;
+            }
+
+           @media(max-width: 768px) {
+                padding-bottom: 20px;
+            } 
+        }
+
+         @media(max-width: 1200px) {
+            justify-content: space-between;
+            padding: 20px;
         }
     }
+
+        @media(max-width: 768px) {
+          height: auto;
+          margin-top: 30px;
+          margin-bottom: 30px; 
+        }
 }
 
 /*CONTACT*/
@@ -597,12 +675,16 @@ header {
         form {
             display: flex;
             justify-content: center;
+
+            @media(max-width: 768px) {
+               flex-direction: column;
+            } 
+                
         }
 
         .inputs {
             width: 455px;
             margin-right: 29px;
-
 
             input { 
                 border: 1px solid #cccccc;
@@ -620,6 +702,10 @@ header {
                     margin-bottom: 0;
                 }
             }
+
+            @media(max-width: 768px) {
+                margin: 0 auto 29px auto;
+            } 
         }
 
 
@@ -639,6 +725,10 @@ header {
                 font-weight: 700;
      
             }
+
+                @media(max-width: 768px) {
+                    margin: 0 auto 29px auto;
+                } 
         }
 
         button {
@@ -660,8 +750,8 @@ header {
 
                 &:hover {
                     transform: scale(1.1);
-       }  
-            }
+                }  
+        }
 
     }
 }
@@ -683,7 +773,11 @@ footer {
             color: #555555;
             font-size: $fontSize-fifth;
             }
-        }
+            
+            @media(max-width: 768px) {
+                flex: 1;
+            }
+            } 
 
         .social-media-icons {
             flex: 2;
@@ -710,7 +804,18 @@ footer {
                         line-height: 34px;
                         border: 3px solid $color-primary;
                     }
+
+                    @media(max-width: 768px) {
+                    margin-right: 0;
+                    } 
             }
+
+            @media(max-width: 768px) {
+                padding-left: 0;
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+            }  
         }
     }
 }
