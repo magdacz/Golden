@@ -66,7 +66,7 @@ header a {
 header a:after {
   content: "";
   height: 3px;
-  width: 100%;
+  width: 0;
   background: #fed136;
   display: block;
   margin: 0 auto;
@@ -76,6 +76,7 @@ header a:after {
 
 header a:hover:after {
   opacity: 1;
+  width: 100%;
 }
 
 header h1 {
@@ -232,7 +233,6 @@ header button:hover {
 .our-portfolio .portfolio div img {
   width: 290px;
   height: 300px;
-  overflow: hidden;
   cursor: pointer;
   transition: 0.6s;
 }
@@ -261,6 +261,8 @@ header button:hover {
 /*ABOUT US*/
 .about-us {
   padding-bottom: 125px;
+  margin: auto;
+  position: relative;
 }
 
 .about-us h1 {
@@ -290,6 +292,7 @@ header button:hover {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  margin-bottom: 83px;
 }
 
 .about-us .about .timeline .content {
@@ -340,27 +343,30 @@ header button:hover {
 .about-us .about .timeline .circle:hover {
   transform: scale(1.2);
   cursor: pointer;
-  opacity: 0.8;
 }
 
 .about-us .about .timeline .photo-july {
   background-image: url(../images/july.png);
-  background-size: cover;
+  object-fill: cover;
+  background-position: center;
 }
 
 .about-us .about .timeline .photo-january {
   background-image: url(../images/january.png);
-  background-size: cover;
+  object-fill: cover;
+  background-position: center;
 }
 
 .about-us .about .timeline .photo-december {
   background-image: url(../images/december.png);
-  background-size: cover;
+  object-fill: cover;
+  background-position: center;
 }
 
 .about-us .about .timeline .photo-february {
   background-image: url(../images/february.png);
-  background-size: cover;
+  object-fill: cover;
+  background-position: center;
 }
 
 .about-us .about .timeline .empty {
@@ -382,12 +388,14 @@ header button:hover {
   margin-top: 25px;
 }
 
-.about-us .about .line {
+.about-us .about:before {
+  content: "";
   width: 3px;
-  height: 95px;
+  height: 1100px;
   background: #f1f1f1;
-  border: none;
-  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
 }
 
 /*TEAM*/

@@ -80,7 +80,7 @@ header {
         &:after {
             content: "";
             height: 3px;
-            width: 100%;
+            width: 0;
             background: $color-fourth;
             display: block;
             margin: 0 auto;
@@ -91,6 +91,7 @@ header {
 
             &:after {
                 opacity: 1;
+                width: 100%;
             }
         }
     }
@@ -243,7 +244,6 @@ header {
             img {
                 width: 290px;
                 height: 300px;
-                overflow: hidden;
                 cursor: pointer;
                 transition: 0.6s;
 
@@ -276,6 +276,8 @@ header {
 /*ABOUT US*/
 .about-us {
     padding-bottom: 125px;
+    margin: auto;
+    position: relative;
 
     h1 {
         text-transform: uppercase;
@@ -305,6 +307,7 @@ header {
         .timeline {
             display: flex;
             justify-content: center;
+            margin-bottom: 83px;
         
             .content {
                 height: 170px;
@@ -344,7 +347,7 @@ header {
             .circle {
                 width: 169px;
                 height: 170px; 
-                border: 5px solid #f1f1f1;;
+                border: 5px solid #f1f1f1;
                 border-radius: 50%;
                 margin-left: 40px;
                 margin-right: 40px;
@@ -353,28 +356,31 @@ header {
                 &:hover {
                         transform: scale(1.2);
                         cursor: pointer;
-                        opacity: 0.8;
                     }
             }
 
             .photo-july {
                 background-image: url(../images/july.png);
-                background-size: cover;
+                object-fill: cover;
+                background-position: center;
             }
 
             .photo-january {
                 background-image: url(../images/january.png);
-                background-size: cover;
+                object-fill: cover;
+                background-position: center;
             }
 
             .photo-december {
                 background-image: url(../images/december.png);
-                background-size: cover;
+                object-fill: cover;
+                background-position: center;
             }
 
             .photo-february {
                 background-image: url(../images/february.png);
-                background-size: cover;
+                object-fill: cover;
+                background-position: center;
             }
 
             .empty {
@@ -397,14 +403,18 @@ header {
                 line-height: 1.7;
                 margin-top: 25px;
             }
-        } 
-    .line {
+        }
+
+    &:before {
+        content: "";
         width: 3px;
-        height: 95px;
+        height: 1100px;
         background: #f1f1f1;;
-        border: none;
-        margin: 0 auto;
-    }   
+        position: absolute;
+        z-index: -1;
+        left: 50%;  
+    }
+
     }
 }
     
