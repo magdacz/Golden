@@ -20,6 +20,7 @@ body {
 /*HEADER*/
 header {
   height: 100vh;
+  min-height: 700px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,14 +29,15 @@ header {
 }
 
 header .top-nav {
-  height: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-top: 40px;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding-top: 40px;
 }
 
 @media (max-width: 768px) {
@@ -114,7 +116,13 @@ header a:hover:after {
   }
 }
 
-header h1 {
+@media (max-width: 992px) {
+  header a {
+    margin-right: 15px;
+  }
+}
+
+header h2 {
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 0;
@@ -122,16 +130,22 @@ header h1 {
   font-size: 40px;
   color: #ffffff;
   font-family: "Merriweather", serif;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: 1px 1px 1px #808080;
 }
 
 @media (max-width: 768px) {
-  header h1 {
-    margin-top: 180px;
+  header h2 {
+    margin-top: 10%;
   }
 }
 
-header p {
+@media (max-width: 992px) {
+  header h2 {
+    margin-top: 15%;
+  }
+}
+
+header h1 {
   text-transform: uppercase;
   font-size: 75px;
   text-align: center;
@@ -139,13 +153,19 @@ header p {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: 1px 1px 1px #808080;
 }
 
 @media (max-width: 768px) {
-  header p {
-    font-size: 65px;
+  header h1 {
+    font-size: 60px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 65px;
   }
 }
 
@@ -183,7 +203,6 @@ header button:hover {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  font-style: bold;
   color: #222222;
 }
 
@@ -211,7 +230,7 @@ header button:hover {
 .services .icons div {
   text-align: center;
   padding: 20px 30px;
-  transition: 0.8s;
+  transition: 0.9s;
 }
 
 .services .icons div h2 {
@@ -235,11 +254,10 @@ header button:hover {
 
 .services .icons div:hover {
   background: #fed136;
-}
-
-.services .icons div:hover:hover p,
-.services .icons div:hover:hover h2 {
-  color: white;
+  /*  &:hover p,
+                &:hover h2 {
+                color: white; 
+                } */
 }
 
 /*PORTFOLIO*/
@@ -293,7 +311,7 @@ header button:hover {
 }
 
 .our-portfolio .portfolio div img:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   opacity: 0.8;
 }
 
@@ -351,7 +369,6 @@ header button:hover {
 }
 
 .about-us .about .timeline .content {
-  height: 170px;
   width: 320px;
 }
 
@@ -401,25 +418,21 @@ header button:hover {
 }
 
 .about-us .about .timeline .photo-july {
-  background-image: url(../images/july.png);
   object-fill: cover;
   background-position: center;
 }
 
 .about-us .about .timeline .photo-january {
-  background-image: url(../images/january.png);
   object-fill: cover;
   background-position: center;
 }
 
 .about-us .about .timeline .photo-december {
-  background-image: url(../images/december.png);
   object-fill: cover;
   background-position: center;
 }
 
 .about-us .about .timeline .photo-february {
-  background-image: url(../images/february.png);
   object-fill: cover;
   background-position: center;
 }
@@ -432,6 +445,18 @@ header button:hover {
 @media (max-width: 768px) {
   .about-us .about .timeline .empty {
     display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us .about .timeline {
+    margin-bottom: 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us .about .timeline {
+    margin-bottom: 83px;
   }
 }
 
@@ -452,7 +477,7 @@ header button:hover {
 .about-us .about:before {
   content: "";
   width: 3px;
-  height: 1100px;
+  height: 70%;
   background: #f1f1f1;
   position: absolute;
   z-index: -1;
@@ -726,6 +751,12 @@ header button:hover {
   margin-bottom: 0;
 }
 
+@media (max-width: 992px) {
+  .section-contact .contact .inputs {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .section-contact .contact .inputs {
     margin: 0 auto 29px auto;
@@ -747,6 +778,12 @@ header button:hover {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .section-contact .contact .message {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -828,7 +865,7 @@ footer .footer .social-media-icons .fab {
   line-height: 40px;
   margin-right: 10px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 footer .footer .social-media-icons .fab:hover {
