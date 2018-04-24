@@ -360,7 +360,7 @@ header {
             display: flex;
             justify-content: center;
             margin-bottom: 83px;
-        
+
             .content {
                 width: 320px;
 
@@ -375,6 +375,7 @@ header {
                     span {
                         text-transform: capitalize;
                     }
+
                 } 
 
                 p {
@@ -388,11 +389,23 @@ header {
 
                 .text-right {
                     text-align: right;
+
+                     @media(max-width: 768px) {
+                      text-align: center; 
+                    }
                 }
 
                 .text-left {
                     text-align: left;
-                }  
+
+                     @media(max-width: 768px) {
+                      text-align: center; 
+                    }
+                }
+
+                @media(max-width: 768px) {
+                      width: auto; 
+                }
             }
 
             .circle {
@@ -407,13 +420,20 @@ header {
                 &:hover {
                         transform: scale(1.2);
                         cursor: pointer;
-                    }
+                }
+
+                @media(max-width: 768px) {
+                    margin-bottom:45px;
+                }
             }
 
             .photo-july {
                 object-fill: cover;
                 background-position: center;
 
+                @media(max-width: 768px) {
+                    order: -1;
+                }
             }
 
             .photo-january {
@@ -424,6 +444,10 @@ header {
             .photo-december {
                 object-fill: cover;
                 background-position: center;
+                
+                @media(max-width: 768px) {
+                    order: -1;
+                }
             }
 
             .photo-february {
@@ -445,7 +469,10 @@ header {
             }
 
              @media(max-width: 768px) {
-                margin-bottom: 83px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 45px;
+                align-items: center;
             }
 
         }
@@ -504,6 +531,12 @@ header {
         margin-bottom: 0;
         margin-top: 0;
         line-height: 0;
+
+        span {
+            @media(max-width: 768px) {
+                display: none;  
+            }
+        }
     }
 
     p {
@@ -636,24 +669,35 @@ header {
             cursor: pointer;
 
             @media(max-width: 1200px) {
-                margin-right: 0;
+            
             }
+
+            @media(max-width: 992px) {
+                width: auto;
+                padding: 10px;
+
+            }  
 
            @media(max-width: 768px) {
                 padding-bottom: 20px;
-            } 
+            }
         }
 
-         @media(max-width: 1200px) {
-            justify-content: space-between;
-            padding: 20px;
-        }
+            @media(max-width: 1200px) {
+                justify-content: space-between;
+                padding: 20px;
+            }
+
+            @media(max-width: 768px) {
+                justify-content: center;
+            }
     }
 
         @media(max-width: 768px) {
           height: auto;
           margin-top: 30px;
           margin-bottom: 30px; 
+
         }
 }
 
