@@ -136,15 +136,16 @@ header {
         font-size: $fontSize-primary;
         color:$color-second;
         font-family:$font-second;
-        text-shadow: 1px 1px 1px #808080;
-
-        @media(max-width: 768px) {
-            margin-top: 10%;
-        } 
+        text-shadow: 1px 1px 1px #808080; 
 
        @media(max-width: 992px) {
             margin-top: 15%;
-        }  
+        } 
+
+        @media(max-width: 768px) {
+            margin-top: 15%;
+            font-size: 30px;
+        } 
     }
 
     h1 {
@@ -157,13 +158,13 @@ header {
         font-weight: 700;
         text-shadow: 1px 1px 1px #808080;
 
-        @media(max-width: 768px) {
-            font-size: 60px;
-            margin-bottom: 30px;
-        } 
-
          @media(max-width: 992px) {
             font-size: 65px;
+        } 
+
+         @media(max-width: 768px) {
+            font-size: 45px;
+            margin-bottom: 30px;
         }  
     }
 
@@ -268,6 +269,11 @@ header {
         font-weight: 800;
         color: $color-primary;
         line-height: 0;
+
+         @media(max-width: 768px) { 
+            line-height: normal;
+            margin-bottom: 0;
+        }
      }
 
      p {
@@ -277,6 +283,10 @@ header {
         font-size: $fontSize-fourth;
         color: $color-third;
 
+        @media(max-width: 768px) { 
+            line-height: normal;
+            margin-top: 10px;
+        }
      }
 
      .portfolio {
@@ -532,10 +542,8 @@ header {
         margin-top: 0;
         line-height: 0;
 
-        span {
-            @media(max-width: 768px) {
-                display: none;  
-            }
+         @media(max-width: 768px) { 
+            line-height: normal;
         }
     }
 
@@ -546,6 +554,10 @@ header {
         font-family:$font-second;
         font-size: $fontSize-fourth;
         color: $color-third;
+
+        @media(max-width: 768px) { 
+            margin-top: 10px;
+        }
     }
 
     .team {
@@ -661,15 +673,27 @@ header {
 
     .logos {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
 
+
+        .logo {
+            @media(max-width: 1200px) {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            @media(max-width: 768px) {
+                width: 100%;
+            }
+        }
+
         img {
-            margin-right: 39px;
             cursor: pointer;
 
             @media(max-width: 1200px) {
-            
+                padding: 10px;
             }
 
             @media(max-width: 992px) {
@@ -691,7 +715,11 @@ header {
             @media(max-width: 768px) {
                 justify-content: center;
             }
-    }
+    }   
+
+        @media(max-width: 1200px) {
+              height: auto;
+            }
 
         @media(max-width: 768px) {
           height: auto;
@@ -721,6 +749,10 @@ header {
         margin-bottom: 0;
         margin-top: 0;
         line-height: 0;
+
+        @media(max-width: 768px) { 
+            line-height: normal;
+        }
     }
 
     p {
@@ -730,6 +762,10 @@ header {
         font-family:$font-second;
         font-size: $fontSize-fourth;
         color: $color-third;
+
+        @media(max-width: 768px) { 
+            margin-top: 10px;
+        }
     }
 
     .contact {
@@ -845,7 +881,7 @@ footer {
             }
             
             @media(max-width: 768px) {
-                flex: 1;
+                text-align: center;
             }
             } 
 
@@ -854,6 +890,14 @@ footer {
             padding-left: 130px; 
             display: flex;
             align-items: center;
+
+            a {
+                @media(max-width: 768px) {
+                   padding: 20px 10px;
+                   padding-bottom: 6px;
+
+                }  
+            }
 
             .fab {
                     text-align: center;
@@ -882,11 +926,15 @@ footer {
 
             @media(max-width: 768px) {
                 padding-left: 0;
-                flex: 1;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center; 
+                order: -1;
             }  
         }
+
+        @media(max-width: 768px) {
+                flex-direction: column;
+            }  
     }
 }
 

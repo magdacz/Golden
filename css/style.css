@@ -133,15 +133,16 @@ header h2 {
   text-shadow: 1px 1px 1px #808080;
 }
 
-@media (max-width: 768px) {
-  header h2 {
-    margin-top: 10%;
-  }
-}
-
 @media (max-width: 992px) {
   header h2 {
     margin-top: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  header h2 {
+    margin-top: 15%;
+    font-size: 30px;
   }
 }
 
@@ -156,16 +157,16 @@ header h1 {
   text-shadow: 1px 1px 1px #808080;
 }
 
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 60px;
-    margin-bottom: 30px;
-  }
-}
-
 @media (max-width: 992px) {
   header h1 {
     font-size: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
   }
 }
 
@@ -276,12 +277,26 @@ header button:hover {
   line-height: 0;
 }
 
+@media (max-width: 768px) {
+  .our-portfolio h1 {
+    line-height: normal;
+    margin-bottom: 0;
+  }
+}
+
 .our-portfolio p {
   margin-top: 30px;
   text-align: center;
   font-family: "Merriweather", serif;
   font-size: 16px;
   color: #777777;
+}
+
+@media (max-width: 768px) {
+  .our-portfolio p {
+    line-height: normal;
+    margin-top: 10px;
+  }
 }
 
 .our-portfolio .portfolio {
@@ -560,8 +575,8 @@ header button:hover {
 }
 
 @media (max-width: 768px) {
-  .section-team h1 span {
-    display: none;
+  .section-team h1 {
+    line-height: normal;
   }
 }
 
@@ -572,6 +587,12 @@ header button:hover {
   font-family: "Merriweather", serif;
   font-size: 16px;
   color: #777777;
+}
+
+@media (max-width: 768px) {
+  .section-team p {
+    margin-top: 10px;
+  }
 }
 
 .section-team .team {
@@ -694,15 +715,36 @@ header button:hover {
 .section-logos .logos {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
+@media (max-width: 1200px) {
+  .section-logos .logos .logo {
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-logos .logos .logo {
+    width: 100%;
+  }
+}
+
 .section-logos .logos img {
-  margin-right: 39px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .section-logos .logos img {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -730,6 +772,12 @@ header button:hover {
   .section-logos .logos {
     -ms-flex-pack: center;
         justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-logos {
+    height: auto;
   }
 }
 
@@ -764,6 +812,12 @@ header button:hover {
   line-height: 0;
 }
 
+@media (max-width: 768px) {
+  .section-contact h1 {
+    line-height: normal;
+  }
+}
+
 .section-contact p {
   text-align: center;
   margin-top: 30px;
@@ -771,6 +825,12 @@ header button:hover {
   font-family: "Merriweather", serif;
   font-size: 16px;
   color: #777777;
+}
+
+@media (max-width: 768px) {
+  .section-contact p {
+    margin-top: 10px;
+  }
 }
 
 .section-contact .contact form {
@@ -897,8 +957,7 @@ footer .footer .copyright h3 {
 
 @media (max-width: 768px) {
   footer .footer .copyright {
-    -ms-flex: 1;
-        flex: 1;
+    text-align: center;
   }
 }
 
@@ -910,6 +969,13 @@ footer .footer .social-media-icons {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+}
+
+@media (max-width: 768px) {
+  footer .footer .social-media-icons a {
+    padding: 20px 10px;
+    padding-bottom: 6px;
+  }
 }
 
 footer .footer .social-media-icons .fab {
@@ -942,12 +1008,19 @@ footer .footer .social-media-icons .fab:hover {
 @media (max-width: 768px) {
   footer .footer .social-media-icons {
     padding-left: 0;
-    -ms-flex: 1;
-        flex: 1;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-order: -1;
+        order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer {
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
